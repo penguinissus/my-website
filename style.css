@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Handwritten Serif';
+    src: url('fonts/handwrittenSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UGLY FONT';
+    src: url('fonts/FontNo1.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+.header-top {
+    font-family: 'UGLY FONT';
+    display: flex;
+}
+
+.header-top h1 {
+    font-size: 500%;
+}
+
+.eatthatjam {
+    width: 20%;
+}
+
+.header-bottom{
+    font-family: 'Handwritten Serif';
+}
+
+.content {
+    font-family: 'Handwritten Serif';
+}
+
+.footer {
+    font-family: 'Handwritten Serif';
+}
