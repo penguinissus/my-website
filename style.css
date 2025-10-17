@@ -12,27 +12,84 @@
     font-style:normal;
 }
 
+@font-face {
+    font-family: 'FIRE FONT';
+    src: url('fonts/goodFont.ttf') format('truetype');
+    font-weight: bolder;
+    font-style:normal;
+}
+
+/* GENERAL CSS */
+body p {
+    font-family: 'FIRE FONT';
+}
+
+body h1 {
+    font-family: 'Handwritten Serif';
+}
+
+body h2 {
+    font-family: 'Handwritten Serif';
+}
+
+body h3 {
+    font-family: 'Handwritten Serif';
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+/* HEADER */
 .header-top {
     font-family: 'UGLY FONT';
     display: flex;
+    align-items: center;
 }
 
 .header-top h1 {
-    font-size: 500%;
+    font-size: 800%;
 }
 
 .eatthatjam {
-    width: 20%;
+    width: 40%;
+    justify-content: center;
 }
 
-.header-bottom{
-    font-family: 'Handwritten Serif';
+/* ts not working?? i want the buttons on the right */
+.icons {
+    justify-content: right;
 }
 
-.content {
-    font-family: 'Handwritten Serif';
+/* FINISHED PROJECTS */
+.finished-projects {
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer {
-    font-family: 'Handwritten Serif';
+/* ONGOING PROJECTS */
+.ongoing-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PROJECT GRAVEYARD */
+.graveyard-projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HAVEN'T STARTED */
+.to-start-projects {
+    display: flex;
+    justify-content: space-between;
 }
