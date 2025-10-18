@@ -19,9 +19,16 @@
     font-style:normal;
 }
 
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/SansSerifFunnySymbols.ttf') format('truetype');
+    font-weight: normal;
+    font-style: monospace;
+}
+
 /* FONT STUFF */
 body p {
-    font-family: 'FIRE FONT';
+    font-family: 'regular';
 }
 
 body h1 {
@@ -56,7 +63,8 @@ body {
 /* HEADER */
 .header {
     background-color: darkslategray;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    margin: 2% 2%;
 }
 
 .header-top {
@@ -67,34 +75,47 @@ body {
 
 .name {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-top h1 {
-    font-size: 800%;
+    font-size: 700%;
     color: white;
 }
 
 .eatthatjam {
-    width: 40%;
+    width: 35%;
+    height: 25%;
 }
 
 /* ts not working?? i want the buttons on the right */
 .icons {
-    margin-left: 10%;
+    display: flex;
+    padding-top: 1%;
+    margin-right: 1%;
+    gap: 1%;
+    justify-content: right;
 }
 
 .header-bottom {
+    display: flex;
+    justify-content: space-evenly;
     margin-left: 5rem;
     color: white;
     padding-bottom: 1rem;
+    align-items: center;
 }
 
 .header-bottom h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    justify-content: center;
+    width: 40%;
 }
 
 .header-bottom p {
     font-size: 2rem;
+    padding-right: 10%;
 }
 
 /* PROJECTS */
