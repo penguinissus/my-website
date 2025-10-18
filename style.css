@@ -49,6 +49,10 @@ body {
     font-size: 2rem;
 }
 
+.content p {
+    font-size: 1.5rem;
+}
+
 /* HEADER */
 .header-top {
     font-family: 'UGLY FONT';
@@ -71,25 +75,9 @@ body {
 }
 
 /* FINISHED PROJECTS */
-.finished-projects {
+.section-grid {
     display: flex;
-    justify-content: space-between;
-}
-
-/* ONGOING PROJECTS */
-.ongoing-projects {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* PROJECT GRAVEYARD */
-.graveyard-projects {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* HAVEN'T STARTED */
-.to-start-projects {
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
