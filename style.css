@@ -19,7 +19,7 @@
     font-style:normal;
 }
 
-/* GENERAL CSS */
+/* FONT STUFF */
 body p {
     font-family: 'FIRE FONT';
 }
@@ -37,11 +37,11 @@ body h3 {
 }
 
 body {
-    padding-left: 5%;
-    padding-right: 10%;
+    background-color: lightgrey;
 }
 
 .content h1 {
+    margin-left: 5%;
     font-size: 4rem;
 }
 
@@ -54,30 +54,60 @@ body {
 }
 
 /* HEADER */
+.header {
+    background-color: darkslategray;
+    border-radius: 0.5rem;
+}
+
 .header-top {
     font-family: 'UGLY FONT';
-    display: flex;
+    display: column;
     align-items: center;
+}
+
+.name {
+    display: flex;
 }
 
 .header-top h1 {
     font-size: 800%;
+    color: white;
 }
 
 .eatthatjam {
     width: 40%;
-    justify-content: center;
 }
 
 /* ts not working?? i want the buttons on the right */
 .icons {
-    justify-content: right;
+    margin-left: 10%;
 }
 
-/* FINISHED PROJECTS */
+.header-bottom {
+    margin-left: 5rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.header-bottom h2 {
+    font-size: 4rem;
+}
+
+.header-bottom p {
+    font-size: 2rem;
+}
+
+/* PROJECTS */
 .section-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 2%;
+}
+
+.project {
+    background-color: lightgray;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 2rem;
 }
