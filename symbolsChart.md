@@ -6,5 +6,5 @@
 6 = teehee
 7 = diode
 8 = yippee
-9 = bolt
+9 = nut
 10 = @
