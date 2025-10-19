@@ -1,0 +1,10 @@
+1 = penguin
+2 = heart
+3 = skull
+4 = smiley face
+5 = music
+6 = teehee
+7 = diode
+8 = yippee
+9 = bolt
+10 = @

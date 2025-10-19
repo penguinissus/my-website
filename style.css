@@ -31,15 +31,7 @@ body p {
     font-family: 'regular';
 }
 
-body h1 {
-    font-family: 'Handwritten Serif';
-}
-
-body h2 {
-    font-family: 'Handwritten Serif';
-}
-
-body h3 {
+body h1, h2, h3 {
     font-family: 'Handwritten Serif';
 }
 
@@ -53,6 +45,7 @@ body {
 }
 
 .content h2 {
+    font-family: 'regular';
     font-size: 2rem;
 }
 
