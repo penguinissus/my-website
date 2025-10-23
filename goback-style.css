@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Handwritten Serif';
+    src: url('fonts/handwrittenSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes {
+    display: table-column;
+}
+
+h1, a {
+    font-family: 'Handwritten Serif';
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5rem;
+    transition: transform 0.5s ease;
+}
+
+a {
+    font-size: 13rem;
+    color: gold;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.3);
+    color: goldenrod;
+}
+
+h1:hover {
+    transform: scale(1.3);
+}
