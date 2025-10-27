@@ -1,3 +1,4 @@
+/* at-rules */
 @font-face {
     font-family: 'Handwritten Serif';
     src: url('fonts/handwrittenSerif.ttf') format('truetype');
@@ -26,6 +27,24 @@
     font-style: monospace;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(0.8) rotate(0deg);
+    }
+    30% {
+        transform: scale(1) rotate(10deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(0deg);
+    }
+    70% {
+        transform: scale(1)rotate(-10deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(0deg);
+    }
+}
+
 /* FONT STUFF */
 body p {
     font-family: 'regular';
@@ -44,6 +63,7 @@ body {
     display: flex;
     font-size: 5rem;
     justify-content: center;
+    padding-top: 1%;
 }
 
 .content h2, a {
@@ -63,7 +83,7 @@ body {
     background-color: darkslategray;
     border-radius: 1rem;
     margin: 2% 2%;
-    margin-bottom: 7%;
+    margin-bottom: 3%;
 }
 
 .header-top {
@@ -76,6 +96,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.name:hover {
+    animation: pulse 1s ease-in-out infinite;
 }
 
 .header-top h1 {
@@ -86,29 +111,11 @@ body {
 .eatthatjam {
     display: flex;
     width: 35%;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .eatthatjam:hover {
     animation: pulse 1s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.8) rotate(0deg);
-    }
-    30% {
-        transform: scale(1) rotate(10deg);
-    }
-    50% {
-        transform: scale(1.2) rotate(0deg);
-    }
-    70% {
-        transform: scale(1)rotate(-10deg);
-    }
-    100% {
-        transform: scale(0.8) rotate(0deg);
-    }
 }
 
 .icons {
@@ -156,6 +163,15 @@ button {
 }
 
 /* PROJECTS */
+.content {
+    margin: 0;
+    margin-top: 0;
+}
+
+.section {
+    background-color: #618d6e;
+}
+
 .section-grid {
     display: flex;
     flex-wrap: wrap;
@@ -188,24 +204,28 @@ button {
 
 .footer {
     display: flex;
-    margin-right: 8%;
+    padding-right: 8%;
     align-items: center;
     justify-content: space-evenly;
+    background-color: darkslategrey;
+    border-radius: 1rem;
 }
 
 .footer h1 {
-    margin-left: 4%;
+    padding-left: 4%;
     font-size: 3rem;
+    color: white;
 }
 
 .footer p {
-    margin-left: 4%;
+    padding-left: 4%;
     font-size: 3rem;
+    color: white;
 }
 
 .icons2 {
     display: flex;
-    margin-left: 4%;
+    padding-left: 4%;
     gap: 15%;
 }
 
