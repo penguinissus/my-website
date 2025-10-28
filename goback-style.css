@@ -27,6 +27,8 @@ h1 {
     transition: transform 0.5s ease;
 }
 
+/* Figure out why the animation isn't working*/
+
 a {
     font-size: 13rem;
     color: gold;
@@ -41,6 +43,14 @@ a:hover {
 
 h1:hover {
     animation: pulse 1s ease-in-out infinite;
+}
+
+.link {
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.4);
 }
 
 @keyframes pulse {

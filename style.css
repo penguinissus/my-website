@@ -1,3 +1,10 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* at-rules */
 @font-face {
     font-family: 'Handwritten Serif';
@@ -56,14 +63,14 @@ body h1, h2, h3 {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: rgb(224, 222, 222);
 }
 
 .content h1 {
     display: flex;
     font-size: 5rem;
     justify-content: center;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 
 .content h2, a {
@@ -84,6 +91,7 @@ body {
     border-radius: 1rem;
     margin: 2% 2%;
     margin-bottom: 3%;
+    border: 10px double white;
 }
 
 .header-top {
@@ -168,8 +176,18 @@ button {
     margin-top: 0;
 }
 
-.section {
+.section2 {
+    background-color: #b0d1b9;
+    margin: 2% 2%;
+    border-radius: 1rem;
+    border: 10px dotted black;
+}
+
+.section1 {
     background-color: #618d6e;
+    margin: 2% 2%;
+    border-radius: 1rem;
+    border: 3px solid black;
 }
 
 .section-grid {
@@ -200,6 +218,16 @@ button {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+    align-items: center;
+}
+
+.divider {
+    background-color: #618d6e;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 1rem;
+    padding-bottom: 1%;
+    border: 3px solid black;
 }
 
 .footer {
@@ -209,9 +237,13 @@ button {
     justify-content: space-evenly;
     background-color: darkslategrey;
     border-radius: 1rem;
+    margin: 2% 2%;
+    border: 10px double white;
 }
 
 .footer h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 4%;
     font-size: 3rem;
     color: white;
@@ -235,9 +267,4 @@ button {
 
 .icons2 a:hover {
     transform: scale(1.3);
-}
-
-/* GO BACK PAGE */
-.go-back {
-    background-color: darkgreen;
 }
