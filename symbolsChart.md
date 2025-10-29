@@ -7,4 +7,4 @@
 7 = diode
 8 = yippee
 9 = nut
-10 = @
+0 = @
