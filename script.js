@@ -7,6 +7,8 @@ const sike = document.getElementById('sike');
 //Funny prank because I haven't figured out the good features yet
 submitBtn.addEventListener('click', () => {
     sike.classList.remove('sike');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
 });
 
 //Drawing Section

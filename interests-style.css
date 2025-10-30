@@ -1,0 +1,54 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* at-rules */
+@font-face {
+    font-family: 'Handwritten Serif';
+    src: url('fonts/handwrittenSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UGLY FONT';
+    src: url('fonts/FontNo1.ttf') format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'FIRE FONT';
+    src: url('fonts/goodFont.ttf') format('truetype');
+    font-weight: bolder;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/SansSerifFunnySymbols.ttf') format('truetype');
+    font-weight: normal;
+    font-style: monospace;
+}
+
+/* FONT STUFF */
+p {
+    font-family: 'regular';
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Handwritten Serif';
+    color: white;
+}
+
+body {
+    background-image: url('images/background5.jpg');
+}
+
+a {
+    color: white;
+}

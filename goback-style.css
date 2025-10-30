@@ -127,6 +127,11 @@ h1:hover {
 
 .garden button {
     margin-bottom: 5%;
+    background-color: white;
+    border: none;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
 }
 
 canvas {
