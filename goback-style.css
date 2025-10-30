@@ -1,3 +1,11 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
 @font-face {
     font-family: 'Handwritten Serif';
     src: url('fonts/handwrittenSerif.ttf') format('truetype');
@@ -5,9 +13,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/SansSerifFunnySymbols.ttf') format('truetype');
+    font-weight: normal;
+    font-style: monospace;  
+}
+
 body {
     background-color: darkgreen;
+}
+
+.top {
     display: flex;
+    flex-direction: row;
+    gap: 5%;
     align-items: center;
     justify-content: center;
 }
@@ -69,4 +89,44 @@ h1:hover {
     100% {
         transform: scale(0.8) rotate(0deg);
     }
+}
+
+/* Canvas */
+.garden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.garden p {
+    font-family: 'regular';
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.garden button {
+    margin-bottom: 7%;
+}
+
+canvas {
+    border: 2px solid white;
+    cursor: crosshair;
+    background-color: black;
+    margin-bottom: 7%;
+}
+
+.textInput {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: 'regular';
+}
+
+.textInput:focus {
+    border-color: gold;
+    box-shadow: 0 0 5px gold;
 }
