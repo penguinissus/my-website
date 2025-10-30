@@ -1,48 +1,24 @@
 const canvas = document.getElementById('drawArea');
 const ctx = canvas.getContext('2d');
 const clearBtn = document.getElementById('clearBtn');
-const textInput = document.getElementById('textInput');
 const submitBtn = document.getElementById('submitBtn');
-const messages = document.getElementById('messages');
+const sike = document.getElementById('sike');
 
-//Submitting section
-async function loadMessages() {
-    const res = await fetch('/messages');
-    const data = await res.json();
-    data.forEach(msg => addMessageToPage(msg));
-}
-
-window.addEventListener('DOMContentLoaded', loadMessages);
-
-submitBtn.addEventListener('click', async () => {
-    const text = textInput.value.trim();
-    if(!text) return;
-
-    const res = await fetch('/messages', {
-        method: 'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({text})
-    });
-    const data = await res.json();
-    if (data.success) addMessageToPage({id: Date.now(), text});
-    textInput.value = "";
+//Funny prank because I haven't figured out the good features yet
+submitBtn.addEventListener('click', () => {
+    sike.classList.remove('sike');
 });
-
-//create message element
-function addMessageToPage(msg) {
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message-item');
-
-    const p = document.createElement('p');
-    p.textContent = msg.text;
-
-    messageDiv.appendChild(p);
-    messages.appendChild(messageDiv);
-}
 
 //Drawing Section
 let drawing = false;
+
+clearBtn.addEventListener('click', ()=> {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+});
+
 canvas.addEventListener('mousedown', ()=> {
+    sike.classList.add('sike');
     drawing = true;
     ctx.beginPath(); //starts a new line
 });

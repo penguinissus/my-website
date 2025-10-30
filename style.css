@@ -38,13 +38,13 @@
     0% {
         transform: scale(0.8) rotate(0deg);
     }
-    30% {
+    25% {
         transform: scale(1) rotate(10deg);
     }
     50% {
-        transform: scale(1.2) rotate(0deg);
+        transform: scale(1.3) rotate(0deg);
     }
-    70% {
+    75% {
         transform: scale(1)rotate(-10deg);
     }
     100% {
@@ -104,7 +104,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .name:hover {
@@ -120,10 +120,6 @@ body {
     display: flex;
     width: 35%;
     transition: transform 0.5s ease;
-}
-
-.eatthatjam:hover {
-    animation: pulse 1s ease-in-out infinite;
 }
 
 .top-bar {
