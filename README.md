@@ -1,5 +1,6 @@
 # personal-website
-personal website
+My personal website yay.  
+This readme is mostly for all the custom fonts I've created.  
 
 # CUSTOM FONTS?!?!!
 Font no. 1:  

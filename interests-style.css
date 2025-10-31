@@ -34,6 +34,19 @@
     font-style: monospace;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
 /* FONT STUFF */
 p {
     font-family: 'regular';
@@ -41,16 +54,16 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: 'Handwritten Serif';
+    font-family: 'regular';
     color: white;
+}
+
+h2 {
+    font-family: 'Handwritten Serif';
 }
 
 body {
     background-image: url('images/background5.jpg');
-}
-
-a {
-    color: white;
 }
 
 .top {
@@ -61,16 +74,17 @@ a {
 }
 
 .top a {
-    font-family: 'regular';
-    font-size: 3rem;
-    padding-top: 2%;
-    padding-right: 15%;
+    color: white;
+    font-family: 'FIRE FONT';
+    font-size: 1.7rem;
+    padding-top: 5%;
+    padding-right: 9%;
 }
 
 h1 {
     padding-bottom: 2%;
     padding-left: 10%;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 /* PLAYLISTS */
@@ -80,7 +94,7 @@ h1 {
     padding-left: 5%;
     padding-right: 5%;
     justify-content: center;
-    gap: 2%;
+    gap: 4%;
     padding-bottom: 2%;
     align-items: center;
 }
@@ -95,6 +109,14 @@ h1 {
 .description h2 {
     font-size: 5.5rem;
     padding-bottom: 1rem;
+}
+
+.description {
+    transition: transform 0.5s ease;
+}
+
+.description:hover {
+    animation: pulse 1s ease-in-out infinite;
 }
 
 .description p {
