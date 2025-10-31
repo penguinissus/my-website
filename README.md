@@ -1,6 +1,7 @@
 # personal-website
-My personal website yay.  
-This readme is mostly for all the custom fonts I've created.  
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+My personal website. yay. I made this because everybody is making one. I know. I'm just doing what everybody else is doing. This website contains all of the projects and interesting things I've done before, and I added a page that shows my playlists so thats cool. This project is the first time I've made something using html and css and js without just following a tutorial and I've learnt a lot. Funny thing is my biggest trouble is still centering divs. 
+
 
 # CUSTOM FONTS?!?!!
 Font no. 1:  
